@@ -25,7 +25,7 @@ html, body {
 	margin-left: 100%;
 	margin-top: 100px;
 	min-height: 400px;
-	z-index: 2;
+	z-index: 4;
 	padding: 10px;	
 }
 
@@ -46,17 +46,13 @@ html, body {
 	padding: 10px;	
 }
 
-#img-fondo {
-	position: relative;
-	background-size: 100% 100%;
-	top: 0;
-	max-width: 100%;
-
-}
-
-#fourth-section {
+.map {
 	width: 30px;
 	height: 30px;
 	border: 1px solid white;
 
+}
+
+#fourth-section {
+	background-color: #f7b617;
 }
