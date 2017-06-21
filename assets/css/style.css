@@ -9,11 +9,13 @@ html, body {
 	height: 100%;
 }
 
-#img-fondo {
-	background-image: url(assets/css/material/taxi.jpg);
+/*#first-section {
+	background-image: url(material/taxi.jpg);
 	background-size: cover;
+	background-position: center;
+	height: 100vh;
 }
-
+*/
 
 #info {
 	position: absolute ;
@@ -27,17 +29,34 @@ html, body {
 	padding: 10px;	
 }
 
+#second-section {
+	background-color: #f7b617; 
+}
+
 #info2 {
 	position: absolute ;
 	width: 40%;
 	color: white;
 	background-color: black;
-	opacity: 0.5;
+	background-color: rgba(0,0,0, 0.3);
 	margin-left: 100%;
 	margin-top: 100px;
 	min-height: 400px;
 	z-index: 2;
 	padding: 10px;	
 }
+
+#img-fondo {
+	position: relative;
+	background-size: 100% 100%;
+	top: 0;
+	max-width: 100%;
+
+}
+
+#fourth-section {
+	width: 30px;
+	height: 30px;
+	border: 1px solid white;
 
 }
