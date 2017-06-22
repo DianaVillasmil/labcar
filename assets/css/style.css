@@ -50,8 +50,12 @@ nav img {
 	padding: 43px 0;
 }
 
-.navbar-collapse {
-	padding-bottom: 120px;
+.navbar-collapse .navbar-nav.hidden-md li a {
+	padding: 10px;
+}
+
+.navbar-collapse .navbar-nav.hidden-md {
+	padding: 10px;
 }
 
 .container-fluid.no-pad {
@@ -176,7 +180,7 @@ nav img {
 	color: #666;
 }
 
-#fourth-section .money {
+#fourth-section #money {
 	font-size: 2em;
 	color: black;
 	text-align: center;
@@ -231,7 +235,6 @@ footer .fourrows > * {
 	display: table-cell;
 	float: none;
 	padding-top: 0;
-	background-color: purple;
 }
 
 footer .fourrows div.social > * {

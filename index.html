@@ -19,22 +19,27 @@
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse">
+				<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#menu">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>	
 				</button>
 			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-left">
+			<div class="navbar-collapse collapse" id="menu">
+				<ul class="nav navbar-nav navbar-left hidden-xs hidden-sm">
 					<a href="#" id="home">
 						<img src="assets/img/logo.png" alt="">
 					</a>
 				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#travels">Viaja</a></li>
-					<li><a href="#drives">Conduce</a></li>
+				<ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+					<li><a href="#first-section">Viaja</a></li>
+					<li><a href="#third-section">Conduce</a></li>
+					<li><a href="#login">Inicia sesión</a></li>
+				</ul>
+				<ul class="nav navbar-nav hidden-md hidden-lg">
+					<li><a href="#first-section">Viaja</a></li>
+					<li><a href="#third-section">Conduce</a></li>
 					<li><a href="#login">Inicia sesión</a></li>
 				</ul>
 			</div>
@@ -148,7 +153,7 @@
 						<a id="tarifa" class="btn btn-default btn-lg hidden-md hidden-lg col-xs-8 col-xs-offset-2" href="#" role="button">CALCULAR TARIFA</a>
 					</div>
 					<br/>
-					<p class="money">S/. 0</p>
+					<p id="money">CLP 0</p>
 				</div>
 				<div class="col-md-6 col2 hidden-xs hidden-sm">
 					<div class="map-border">

@@ -1,4 +1,4 @@
-var map, geocoder, directionsService, directionsDisplay, puntoA, puntoB, marcadorA, marcadorB, origenInput, destinoInput, origenAutocomplete, destinoAutocomplete;
+var map, geocoder, directionsService, directionsDisplay, puntoA, puntoB, marcadorA, marcadorB, origenInput, destinoInput, origenAutocomplete, destinoAutocomplete, tarifa;
 
 function initMap(){
 
@@ -96,14 +96,19 @@ function initMap(){
 		alert("Tenemos un problema con encontrar tu ubicación");
 	}
 
-	function calcularRuta() {
+	function calcularRuta(event) {
+        event.stopPropagation();
+        event.preventDefault();
 		if (puntoA && puntoB) {
 			directionsService.route({
 		        origin: puntoA,
 		        destination: puntoB,
-		        travelMode: google.maps.TravelMode.WALKING //DRIVING O BICYCLING
+		        travelMode: google.maps.TravelMode.DRIVING //WALKING, DRIVING O BICYCLING
 		    }, function (response, status) {
 		        if (status == google.maps.DirectionsStatus.OK) {
+                    console.log(response);
+                    tarifa = response.routes[0].legs[0].distance.value * 0.5;
+                    document.getElementById('money').innerHTML = "CLP " + tarifa;
 		            directionsDisplay.setDirections(response);
 		        } else {
 		            alert('La solicitud de ruta falló por: ' + status);
@@ -112,10 +117,15 @@ function initMap(){
 		} else {
 			alert('Es necesario tener Origen y Destino definidos');
 		}
+
+        return false;
 		
 	}
 
 	document.getElementById("ruta").addEventListener("click", calcularRuta);
+    document.getElementById("tarifa").addEventListener("click", calcularRuta);
+
+    buscar();
 
 }
 	
