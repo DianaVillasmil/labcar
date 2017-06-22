@@ -9,10 +9,30 @@ html, body {
 	height: 100%;
 }
 
+a.btn.btn-default {
+	border-width: 0px;
+	border-color: transparent;
+	border-style: none;
+}
+
 nav.navbar {
 	min-height: 120px;
 	background-color: white;
 	border-color: white;
+}
+
+nav.navbar .navbar-header {
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30%;
+}
+
+nav.navbar .navbar-header .navbar-toggle {
+	margin: 44px 30px;
+	border-color: transparent;
+	border-width: 0;
+	border-style: none;
 }
 
 nav.navbar-default .navbar-nav li a {
@@ -26,7 +46,7 @@ nav.navbar-default .navbar-nav li a:hover {
 	color: #f7b617;
 }
 
-nav #home img {
+nav img {
 	padding: 43px 0;
 }
 
@@ -83,6 +103,9 @@ nav #home img {
 	border-color: white;
 	border-width: 1px;
 	border-style: solid;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
 }
 
 #second-section .info > * {
@@ -95,6 +118,20 @@ nav #home img {
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+#second-section .hidden-md {
+	padding: 0;
+}
+
+#second-section .hidden-md h3 {
+	margin: 0;
+}
+
+#second-section .hidden-md .col1 {
+	width: 70%;	
+	padding-bottom: 112.92%;
+	margin: 0 auto;
 }
 
 #third-section {
@@ -119,27 +156,104 @@ nav #home img {
 	background-color: #de9e00;
 }
 
-
-
-
-
-#info2 {
-	width: 40%;
-	color: white;
-	background-color: black;
-	background-color: rgba(0,0,0, 0.3);
-	margin-top: 100px;
-	min-height: 400px;
-	padding: 10px;	
-}
-
-.map {
-	width: 30px;
-	height: 30px;
-	border: 1px solid white;
-
-}
-
 #fourth-section {
 	background-color: #f7b617;
+	color: white;
+	padding: 50px 0;
+	font-size: 1.25em;
 }
+
+#fourth-section input.trans-bg {
+	background-color: rgba(0, 0, 0, 0);
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+	padding: 20px 10px;
+	color: white;
+}
+
+#fourth-section input.trans-bg::placeholder {
+	color: #666;
+}
+
+#fourth-section .money {
+	font-size: 2em;
+	color: black;
+	text-align: center;
+}
+
+#fourth-section .col2 .map-border {
+	position: relative;
+	width: 75%;
+	padding-bottom: 75%;
+	margin: 0 auto;
+	border-style: solid;
+	border-color: white;
+	border-width: 1px;
+}
+
+#fourth-section .col2 .map-border #map {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;	
+}
+
+footer {
+	background-color: #2b2b2b;
+	padding: 50px 0;
+	color: white;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+}
+
+footer a:hover {
+	color: #aaa;
+}
+
+footer ul li {
+	list-style: none;
+	text-align: left;
+}
+
+footer .fourrows {
+	display: table;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	margin-left: -12.5%;
+}
+footer .fourrows > * {	
+	display: table-cell;
+	float: none;
+	padding-top: 0;
+	background-color: purple;
+}
+
+footer .fourrows div.social > * {
+	position: absolute;
+	top: 100%;
+}
+
+footer .fourrows .stores {
+	position: absolute;
+	bottom: 0px;
+	right: -12.5%;
+}
+
+footer .fourrows .stores > * {
+	width: 50%;
+	margin: 10px;
+}
+
+footer .tworows .stores > * {
+	width: 100%;
+	max-width: 150px; 
+	margin: 10px 0;
+	clear: both;
+}
+
