@@ -9,23 +9,73 @@ html, body {
 	height: 100%;
 }
 
-/*#first-section {
-	background-image: url(material/taxi.jpg);
-	background-size: cover;
-	background-position: center;
-	height: 100vh;
+nav.navbar {
+	min-height: 120px;
+	background-color: white;
+	border-color: white;
 }
-*/
+
+nav.navbar-default .navbar-nav li a {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-weight: bold;
+	color: #222;
+}
+
+nav.navbar-default .navbar-nav li a:hover {
+	color: #f7b617;
+}
+
+nav #home img {
+	padding: 43px 0;
+}
+
+.navbar-collapse {
+	padding-bottom: 120px;
+}
+
+.container-fluid.no-pad {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#first-section {
+    background-image: url("../img/taxi.jpg");
+    background-size: cover;
+	background-position: bottom;
+	padding-top: 120px;
+}
+
+#first-section .jumbotron {
+	border-radius: 0;
+	margin: 150px 0;
+	background-color: #f7b617;
+	color: white;
+}
+
+#first-section .jumbotron h1 {
+	font-size: 2.75em;
+}
+
+#first-section .jumbotron h2 {
+	font-size: 2em;
+}
+
+#first-section .jumbotron p {
+	font-size: 1em;
+}
+
+#first-section .jumbotron h2 img {
+	height: .75em;
+	vertical-align: middle;
+}
 
 #info {
-	position: absolute ;
 	width: 40%;
 	color: white;
 	background-color: #f7b617;
-	margin-left: 100%;
 	margin-top: 100px;
 	min-height: 400px;
-	z-index: 4;
 	padding: 10px;	
 }
 
@@ -34,15 +84,12 @@ html, body {
 }
 
 #info2 {
-	position: absolute ;
 	width: 40%;
 	color: white;
 	background-color: black;
 	background-color: rgba(0,0,0, 0.3);
-	margin-left: 100%;
 	margin-top: 100px;
 	min-height: 400px;
-	z-index: 2;
 	padding: 10px;	
 }
 
