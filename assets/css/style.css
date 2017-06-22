@@ -70,18 +70,58 @@ nav #home img {
 	vertical-align: middle;
 }
 
-#info {
-	width: 40%;
-	color: white;
-	background-color: #f7b617;
-	margin-top: 100px;
-	min-height: 400px;
-	padding: 10px;	
-}
-
 #second-section {
 	background-color: #f7b617; 
+	font-size: 1.5em;
+	color: white;
+	padding: 50px 0;
 }
+
+#second-section .info { 
+	display: table;
+	padding: 50px 0;
+	border-color: white;
+	border-width: 1px;
+	border-style: solid;
+}
+
+#second-section .info > * {
+	display: table-cell;
+	float: none;	
+}
+
+#second-section .col1 {
+	background-image: url(../img/celular.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#third-section {
+	background-image: url(../img/conduce.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-size: 1.25em;
+}
+
+#third-section .col1 {
+	background-color: rgba(0,0,0,.3);
+	color: white;
+	padding: 100px 30px 200px;
+}
+
+#third-section .col1 .btn.btn-warning {
+	background-color: #f7b617;
+}
+
+#third-section .col1 .btn.btn-warning:hover {
+	background-color: #de9e00;
+}
+
+
+
+
 
 #info2 {
 	width: 40%;
